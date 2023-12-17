@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import axios from 'axios'
+import Header from './components/Header/Header'
 import './App.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <>
+      <Header />
       <div className='App'>
         <h1>Characters</h1>
         <table>
