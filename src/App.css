@@ -5,8 +5,9 @@
 }
 
 .App {
-  display: grid;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
   justify-content: center;
   align-items: center;
   color: hsl(230, 20%, 40%);
