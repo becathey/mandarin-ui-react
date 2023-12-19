@@ -1,45 +1,25 @@
-import {useState, useEffect} from 'react'
-import axios from 'axios'
+import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import Home from './components/Home/Home'
+import Cards from './components/Cards/Cards'
+import About from './components/About/About'
+import PageNotFound from './components/PageNotFound/PageNotFound'
 import './App.css'
 
 function App() {
-  const [data, setData] = useState({data: []})
-  useEffect(() => {
-    const fetchData = async () => {
-      const result = await axios(
-        'http://localhost:5000/words'
-      )
-      setData(result.data)
-      console.log(result.data)
-    }
-    fetchData()
-  }, [data])
 
   return (
     <>
       <Header />
       <div className='App'>
-        <h1>Characters</h1>
-        <table>
-          <thead>
-            <tr>
-              <th>Mandarin</th>
-              <th>Pinyin</th>
-              <th>English</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.data.map(w => (
-              <tr key={w.id}>
-                <td>{w.mandarin}</td>
-                <td>{w.pinyin}</td>
-                <td>{w.english}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="home" element={<Home />} />
+          <Route path="cards" element={<Cards />} />
+          <Route path='about' element={<About />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
       </div>
       <Footer />
     </>

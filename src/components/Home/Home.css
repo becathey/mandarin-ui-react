@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 20px 20px 20px 5px hsl(210, 30%, 70%);
+    text-align: left;
+  }
+  th {
+    background-color: hsl(210, 60%, 90%);
+    padding: 0.75rem 2rem;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+  td {
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  tr:nth-child(even) {
+    background-color: hsl(210, 90%, 95%);
+  }
