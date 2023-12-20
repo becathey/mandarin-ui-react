@@ -4,13 +4,13 @@ import './Home.css'
 
 const Home = () => {
     const [data, setData] = useState({data: []})
+
     useEffect(() => {
       const fetchData = async () => {
         const result = await axios(
           'http://localhost:5000/words'
         )
         setData(result.data)
-        console.log(result.data)
       }
       fetchData()
     }, [data])

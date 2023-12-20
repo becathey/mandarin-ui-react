@@ -10,9 +10,10 @@ import './App.css'
 function App() {
 
   return (
-    <>
-      <Header />
+      
       <div className='App'>
+        <main>
+        <Header />
         <Routes>
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
@@ -20,9 +21,9 @@ function App() {
           <Route path='about' element={<About />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
+        </main>
+        <Footer />
       </div>
-      <Footer />
-    </>
   )
 }
 
