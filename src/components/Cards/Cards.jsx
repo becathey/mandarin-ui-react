@@ -8,7 +8,7 @@ const Cards = () => {
     useEffect(() => {
         const fetchData = async () => {
           const result = await axios(
-            'http://mandarin-api-production.up.railway.app/words'
+            'https://mandarin-api-production.up.railway.app/words'
           )
           setCards(result.data.data)
         }
