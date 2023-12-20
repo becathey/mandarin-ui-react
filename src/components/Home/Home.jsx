@@ -8,7 +8,7 @@ const Home = () => {
     useEffect(() => {
       const fetchData = async () => {
         const result = await axios(
-          'http://localhost:5000/words'
+          'http://mandarin-api-production.up.railway.app/words'
         )
         setData(result.data)
       }
