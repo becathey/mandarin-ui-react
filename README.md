@@ -1,8 +1,31 @@
-# React + Vite
+# Mandarin Characters
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mandarin Characters is an application for learning and practicing Mandarin vocabulary. It includes a listing of common Mandarin characters, along with their pinyin transliterations and English translations, and a page for practicing with vocabulary cards. The project is a frontend UI created with React. It consumes data from a backend API.
 
-Currently, two official plugins are available:
+## Install Dependencies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```
+npm install
+```
+
+## Run the App
+
+To run the app in development mode, in the project directory run:
+
+```
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in the browser to view the application.
+
+## Build the App
+
+To build the app for production, run:
+
+```
+npm run build
+```
+
+This will bundle React in production mode and optimize the build for best performance.
+
+The application is ready to be deployed.
